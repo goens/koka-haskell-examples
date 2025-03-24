@@ -1,12 +1,6 @@
 fun add-twice( x : int) : int
   x + x
 
-fun fib(n : int) : div int
-  if n < 2 then
-    n
-  else
-    fib(n - 1) + fib(n - 2)
-
 fun simple-recursion(l : list<int>) : int
   match l
     Nil -> 0
@@ -17,6 +11,12 @@ fun broken-recursion(l : list<int>) : div int
     Nil -> 0
     Cons(x, xs) -> x + broken-recursion(Cons(x+1,xs))
   
+fun fib(n : int) : div int
+  if n < 2 then
+    n
+  else
+    fib(n - 1) + fib(n - 2)
+
 fun ack(x, y : int) : div int
   match (x, y)
     (0,   y) -> y+1

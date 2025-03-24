@@ -5,5 +5,6 @@ pkgs.mkShell {
     pkgs.koka
     pkgs.cabal-install
     pkgs.ghc
+    pkgs.haskell-language-server
   ];
 }
