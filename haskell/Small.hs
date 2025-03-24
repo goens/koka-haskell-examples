@@ -1,3 +1,5 @@
+module Small where
+
 import Control.Monad.Reader
 
 foo :: () -> Reader Int Bool
